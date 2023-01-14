@@ -1,0 +1,25 @@
+.footer {
+    min-height: 180px;
+    background: url("../img/footer.jpg") center center/cover no-repeat;
+    padding: 45px 0 50px 0;
+    color: #fff;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .link {
+        display: block;
+        margin-top: 15px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .call {
+        text-align: center;
+        color: $green;
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 150px;
+    &__left-block {
+        display: flex;
+        justify-content: space-between;
+        min-width: 800px;
+    }
+    &__logo {
+        max-width: 80px;
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 600;
+            color: $green;
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        position: relative;
+        margin-right: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        color: $green;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.promotion {
+    padding: 100px 0 100px 0;
+    position: relative;
+    .container {
+        display: flex;
+    }
+    &__text {
+        text-align: center;
+        width: 50%;
+    }
+    &__descr {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 300;
+        span {
+            font-weight: bold;
+            font-size: 26px;
+        }
+    }
+    &__timer {
+        width: 50%;
+        .title {
+            text-align: center;
+        }
+        .timer {
+            margin-top: 60px;
+            padding: 0 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &__block {
+                width: 102px;
+                height: 120px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+                span {
+                    color: $green;
+                    display: block;
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                    font-size: 56px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
