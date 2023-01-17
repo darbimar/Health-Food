@@ -1,13 +1,106 @@
 @media (max-width: 1439px) {
+    .header {
+        padding: 0 100px;
+        &__left-block {
+            min-width: 780px;
+        }
+    }
+    .preview {
+        .tabcontainer {
+            max-width: 1000px;
+            .tabcontent {
+                &__descr {
+                    width: 475px;
+                    height: 300px;
+                    padding: 30px;
+                    font-size: 22px;
+                    left: -10px;
+                    top: 260px;
+                }
+            }
+        }
+    }
 
 }
 @media (max-width: 1200px) {
+    .header {
+        padding: 0 60px;
+        &__left-block {
+            min-width: 680px;
+        }
+        &__link {
+            margin-right: 15px;
+        }
+    }
+    .btn {
+        &_white {
+            width: 140px;
+            height: 55px;
+        }
+    }
+
+    .preview {
+        .tabcontainer {
+            max-width: 870px;
+            .tabcontent {
+                &__descr {
+                    width: 430px;
+                    height: 250px;
+                    padding: 25px;
+                    font-size: 19px;
+                    left: 0px;
+                    top: 230px;
+                }
+            }
+        }
+    }
     
 }
 
+
 @media (max-width: 992px) {
-    
+    .header {
+        &__link {
+            display: inline-block;
+            &:nth-child(2n+1) {
+                width: 100px;
+                text-align: center;
+            }
+        }
+    }
+
+    .btn {
+       &_white {
+        display: none;
+       }
+    }
+
+    .preview {
+        .tabcontainer {
+            max-width: 680px;
+            .tabcontent {
+                max-width: 600px;
+                &__descr {
+                    padding: 13px;
+                    line-height: 27px;
+                    width: 350px;
+                    height: 200px;
+                    font-size: 16px;
+                    top: 180px;
+                }
+            }
+        }
+        .tabheader {
+            h3 {
+                font-size: 20px;
+            }
+            &__item {
+                font-size: 19px;
+            }
+        }
+    }
 }
+
 
 @media (max-width: 768px) {
     
