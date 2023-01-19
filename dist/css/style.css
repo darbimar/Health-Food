@@ -697,3 +697,127 @@ a {
     font-size: 19px;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    height: 100px;
+    padding: 0 40px;
+  }
+  .header__left-block {
+    min-width: 500px;
+  }
+  .header__links {
+    display: none;
+  }
+  .header .burger {
+    display: block;
+  }
+  .header__mobile {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .header__mobile .header__left-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__mobile .header__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  .header__mobile .header__link {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  .header__mobile .header__right-block button {
+    display: block;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+  .no-scroll .sidepanel {
+    display: none;
+  }
+
+  .preview {
+    padding: 30px 0;
+  }
+  .preview .tabcontainer {
+    max-width: 500px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .preview .tabcontainer .tabcontent {
+    max-width: 450px;
+  }
+  .preview .tabcontainer .tabcontent img {
+    padding: 0;
+  }
+  .preview .tabcontainer .tabcontent__descr {
+    left: 130px;
+    top: 130px;
+  }
+  .preview .tabheader {
+    width: 305px;
+  }
+  .preview .tabheader__items {
+    margin: 0;
+  }
+}
+.burger {
+  display: none;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: transform 0.3s, bottom 0.3s 0.3s;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s, top 0.3s 0.3s;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.burger__line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.burger__active::before {
+  transform: rotate(45deg);
+  top: 50%;
+  transition: top 0.3s, transform 0.3s 0.3s;
+}
+.burger__active::after {
+  transform: rotate(-45deg);
+  top: 50%;
+  transition: bottom 0.3s, transform 0.3s 0.3s;
+}
+.burger__active .burger__line {
+  display: none;
+}
