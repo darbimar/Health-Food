@@ -114,6 +114,49 @@ window.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('no-scroll');
     });
 
+    //Modal
+
+    const modalOpenButton = document.querySelector('[data-modal]'),
+          modal = document.querySelector('.modal'),
+          modalCloseButton = document.querySelector('[data-close]');
+
+    modalOpenButton.addEventListener('click', openModal);
+
+    function openModal() {
+        modal.classList.toggle('show');
+        document.body.style.overflow = 'hidden';
+        clearInterval(modalTimerId);
+    }
+
+    function closeModal() {
+        modal.classList.toggle('show');
+        document.body.style.overflow = '';
+    }
+
+    modalCloseButton.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.code === 'Escape') {
+            closeModal();
+        }
+    });
+
+    const modalTimerId = setTimeout(openModal, 10000);
+
+    function showModalByScroll() {
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+            openModal();
+            window.removeEventListener('scroll', showModalByScroll);
+        }
+    }
+
+    window.addEventListener('scroll', showModalByScroll);
 
     
 });
