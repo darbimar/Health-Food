@@ -540,6 +540,14 @@
     left: -10px;
     top: 260px;
   }
+
+  .offer .container {
+    max-width: 1100px;
+    justify-content: space-around;
+  }
+  .offer__slider {
+    max-width: 550px;
+  }
 }
 @media (max-width: 1200px) {
   .header {
@@ -568,6 +576,20 @@
     left: 0px;
     top: 230px;
   }
+
+  .offer .container {
+    max-width: 893px;
+  }
+  .offer__slider {
+    max-width: 500px;
+  }
+  .offer__slider #current {
+    font-size: 42px;
+  }
+  .offer__advantages {
+    width: 300px;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 992px) {
   .header__link {
@@ -576,6 +598,9 @@
   .header__link:nth-child(2n+1) {
     width: 100px;
     text-align: center;
+  }
+  .header__right-block {
+    display: none;
   }
 
   .btn_white {
@@ -601,6 +626,28 @@
   }
   .preview .tabheader__item {
     font-size: 19px;
+  }
+
+  .offer .container {
+    max-width: 650px;
+    flex-direction: column;
+  }
+  .offer__text {
+    margin: 0;
+  }
+  .offer__slider {
+    max-width: 650px;
+  }
+  .offer__slider #current {
+    font-size: 48px;
+  }
+  .offer__advantages {
+    text-align: center;
+    width: 650px;
+    margin-top: 0;
+  }
+  .offer__advantages h2:first-child {
+    margin-top: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -639,7 +686,7 @@
     width: 100%;
     margin-right: 0;
   }
-  .header__mobile .header__right-block button {
+  .header__mobile .header__right-block {
     display: block;
   }
 
@@ -647,6 +694,10 @@
     overflow: hidden;
   }
   .no-scroll .sidepanel {
+    display: none;
+  }
+
+  .sidepanel {
     display: none;
   }
 
@@ -673,6 +724,70 @@
   }
   .preview .tabheader__items {
     margin: 0;
+  }
+
+  .offer {
+    padding-top: 0;
+  }
+  .offer .container {
+    max-width: 490px;
+  }
+  .offer__slider {
+    max-width: 490px;
+  }
+  .offer__slider #current {
+    font-size: 40px;
+  }
+  .offer__advantages {
+    max-width: 490px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    height: 80px;
+    padding: 0 20px;
+  }
+  .header__left-block {
+    min-width: 300px;
+  }
+
+  .preview .tabcontainer {
+    max-width: 330px;
+  }
+  .preview .tabcontainer .tabcontent {
+    max-width: 300px;
+  }
+  .preview .tabcontainer .tabcontent img {
+    padding: 0;
+  }
+  .preview .tabcontainer .tabcontent__descr {
+    max-width: 300px;
+    position: relative;
+    left: 0;
+    top: -4px;
+    line-height: 21px;
+  }
+  .preview .tabheader {
+    width: 305px;
+  }
+  .preview .tabheader__items {
+    margin: 0;
+  }
+
+  .offer .container {
+    max-width: 310px;
+  }
+  .offer__slider {
+    max-width: 310px;
+  }
+  .offer__slider #current {
+    font-size: 30px;
+  }
+  .offer__slide {
+    height: 220px;
+  }
+  .offer__advantages {
+    max-width: 310px;
   }
 }
 .burger {
