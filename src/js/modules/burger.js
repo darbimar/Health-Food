@@ -10,4 +10,4 @@ function burger() {
     });
 }
 
-module.exports = burger;
+export default burger;
