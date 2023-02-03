@@ -81,6 +81,25 @@
         }
     }
 
+    .calculating {
+        &__choose{
+            &_medium {
+                width: 643px;
+            }
+            &_big {
+                width: 833px;
+                .calculating__choose-item {
+                    width: 175px;
+                }
+            }
+        }
+        &__result {
+            span {
+                margin-right: 15px;
+            }
+        }
+    }
+
     
 }
 
@@ -153,6 +172,28 @@
             }
         }
     }
+
+    .calculating {
+        .container {
+            max-width: 700px;
+        }
+
+        &__choose{
+            &_medium {
+                width: 600px;
+                .calculating__choose-item {
+                    width: 160px;
+                }
+            }
+            &_big {
+                flex-wrap: wrap;
+                width: 600px;
+                gap: 30px;
+                justify-content: center;
+            }
+        }
+    }
+
 
 }
 
@@ -249,6 +290,28 @@
             max-width: 490px;
         }
     }
+
+    .calculating {
+        .container {
+            max-width: 490x;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        &__choose{
+            &_medium {
+                width: 490px;
+                .calculating__choose-item {
+                    width: 140px;
+                }
+            }
+            &_big {
+                width: 490px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -301,6 +364,40 @@
         }
         &__advantages {
             max-width: 310px;
+        }
+    }
+
+    .calculating {
+        .container {
+            max-width: 310x;
+        }
+
+        .title {
+            font-size: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        &__choose{
+            &-item{
+                width: 150px;
+            }
+            &_medium {
+                width: 300px;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            &_big {
+                width: 300px;
+                .calculating__choose-item {
+                    width: 130px;
+                }
+            }
+        }
+        &__total {
+            width: 300px;
         }
     }
 }

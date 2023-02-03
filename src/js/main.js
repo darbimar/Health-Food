@@ -11,12 +11,12 @@ import { openModal } from './modules/modal';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-    const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 10000);
+    // const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 10000);
     burger();
     calc();
-    forms('form', modalTimerId);
+    // forms('form', modalTimerId);
     menu();
-    modal('[data-modal]', '.modal', modalTimerId);
+    // modal('[data-modal]', '.modal', modalTimerId);
     slider({
         slide: '.offer__slide',
         nextArrow: '.offer__slider-next',
