@@ -29,9 +29,11 @@ function menu () {
             }
             element.innerHTML = `
                 <img src="${this.src}" alt=${this.alt}>
-                <h3 class="menu__item-subtitle">${this.title}</h3>
-                <div class="menu__item-descr">${this.descr}</div>
-                <div class="menu__item-price"><span>${this.price}</span> рублей/день</div>
+                <div class="menu__item-text">
+                    <h3 class="menu__item-subtitle">${this.title}</h3>
+                    <div class="menu__item-descr">${this.descr}</div>
+                    <div class="menu__item-price"><span>${this.price}</span> рублей/день</div>
+                </div>
             `;
             this.parent.append(element);
         }
