@@ -412,7 +412,7 @@
 
     .calculating {
         .container {
-            max-width: 490x;
+            max-width: 490px;
         }
 
         &__choose{
@@ -541,16 +541,11 @@
     }
 
     .calculating {
+        padding: 0;
         .container {
-            max-width: 310x;
+            max-width: 310px;
         }
 
-        .title {
-            font-size: 44px;
-            padding-left: 20px;
-            padding-right: 20px;
-
-        }
 
         &__choose{
             &-item{
