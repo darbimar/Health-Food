@@ -6,7 +6,7 @@ const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 const browsersync = require("browser-sync");
 
-const dist = "/Applications/MAMP/htdocs/test";
+const dist = "./docs";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -64,7 +64,7 @@ gulp.task("copy-assets", () => {
 
 gulp.task("watch", () => {
     browsersync.init({
-		server: "./dist/",
+		server: "./docs/",
 		port: 4000,
 		notify: true
     });
