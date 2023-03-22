@@ -72,9 +72,9 @@ function forms(formSelector, modalTimerId) {
         }, 4000);
     }
 
-    fetch('http://my-json-server.typicode.com/darbimar/Health-Food/menu')
-        .then(data => data.json())
-        .then(res => console.log(res));
+    // fetch('http://my-json-server.typicode.com/darbimar/Health-Food/menu')
+    //     .then(data => data.json())
+    //     .then(res => console.log(res));
     
 }
 
