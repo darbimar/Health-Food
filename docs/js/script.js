@@ -2338,7 +2338,7 @@ function forms(formSelector, modalTimerId) {
     }, 4000);
   }
 
-  fetch('http://localhost:3000/menu').then(data => data.json()).then(res => console.log(res));
+  fetch('http://my-json-server.typicode.com/darbimar/Health-Food/menu').then(data => data.json()).then(res => console.log(res));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (forms);
@@ -2683,7 +2683,9 @@ const postData = async (url, data) => {
 };
 
 const getResource = async url => {
-  const res = await fetch(url);
+  const res = await fetch(url, {
+    mode: 'cors'
+  });
 
   if (!res.ok) {
     throw new Error(`Could not fetch ${url}, status: ${res.status}`);

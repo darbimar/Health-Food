@@ -39,6 +39,7 @@ function menu () {
         }
     }
 
+    
     getResource('http://my-json-server.typicode.com/darbimar/Health-Food/menu')
         .then(data => {
             data.forEach(({img, altimg, title, descr, price}) => {

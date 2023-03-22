@@ -11,7 +11,7 @@ const postData = async (url, data) => {
 };
 
 const getResource = async (url) => {
-    const res = await fetch(url);
+    const res = await fetch(url, {mode: 'cors'});
 
     if(!res.ok) {
         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
