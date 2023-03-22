@@ -2274,7 +2274,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_promise_finally__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_finally__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal */ "./src/js/modules/modal.js");
 /* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/services */ "./src/js/services/services.js");
-/* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_services_services__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -2357,7 +2356,6 @@ function forms(formSelector, modalTimerId) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/services */ "./src/js/services/services.js");
-/* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_services_services__WEBPACK_IMPORTED_MODULE_0__);
 
 
 function menu() {
@@ -2667,10 +2665,31 @@ function timer(id, deadline) {
 /*!*************************************!*\
   !*** ./src/js/services/services.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: postData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/marinedarbinyan/Downloads/Food/src/js/services/services.js: Export 'getResource' is not defined (24:18)\n\n\u001b[0m \u001b[90m 22 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 | \u001b[39m\u001b[36mexport\u001b[39m {postData\u001b[33m,\u001b[39m getResource}\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Parser._raise (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/parser/lib/index.js:742:17)\n    at Parser.raiseWithData (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/parser/lib/index.js:735:17)\n    at Parser.raise (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/parser/lib/index.js:729:17)\n    at Parser.parseTopLevel (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/parser/lib/index.js:11018:14)\n    at Parser.parse (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/parser/lib/index.js:12628:10)\n    at parse (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/parser/lib/index.js:12679:38)\n    at parser (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/marinedarbinyan/Downloads/Food/node_modules/@babel/core/lib/transformation/normalize-file.js:93:38)\n    at normalizeFile.next (<anonymous>)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postData", function() { return postData; });
+const postData = async (url, data) => {
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: data
+  });
+  return await res.json();
+}; // const getResource = async (url) => {
+//     const res = await fetch(url);
+//     if(!res.ok) {
+//         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+//     }
+//     return await res.json();
+// };
+
+
+
 
 /***/ })
 
