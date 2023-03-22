@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     burger();
     calc();
     forms('form', modalTimerId);
-    menu();
+    // menu();
     modal('[data-modal]', '.modal', modalTimerId);
     slider({
         slide: '.offer__slide',

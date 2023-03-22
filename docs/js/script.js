@@ -2092,8 +2092,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const modalTimerId = setTimeout(() => Object(_modules_modal__WEBPACK_IMPORTED_MODULE_4__["openModal"])('.modal', modalTimerId), 10000);
   Object(_modules_burger__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_modules_calc__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  Object(_modules_forms__WEBPACK_IMPORTED_MODULE_2__["default"])('form', modalTimerId);
-  Object(_modules_menu__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_modules_forms__WEBPACK_IMPORTED_MODULE_2__["default"])('form', modalTimerId); // menu();
+
   Object(_modules_modal__WEBPACK_IMPORTED_MODULE_4__["default"])('[data-modal]', '.modal', modalTimerId);
   Object(_modules_slider__WEBPACK_IMPORTED_MODULE_5__["default"])({
     slide: '.offer__slide',
@@ -2683,9 +2683,7 @@ const postData = async (url, data) => {
 };
 
 const getResource = async url => {
-  const res = await fetch(url, {
-    mode: 'cors'
-  });
+  const res = await fetch(url);
 
   if (!res.ok) {
     throw new Error(`Could not fetch ${url}, status: ${res.status}`);
