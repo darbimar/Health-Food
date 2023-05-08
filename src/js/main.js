@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
         currentCount: '#current'
     });
     tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-    timer('.timer', '2023-06-11');
+    timer('.timer', '2023-10-11');
 
 });
 
